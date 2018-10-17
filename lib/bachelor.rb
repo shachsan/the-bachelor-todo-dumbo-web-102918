@@ -63,7 +63,7 @@ def get_occupation(data, hometown)
   contestant_bio_data(data, hometown).each do |bio_data_hash|
     occupations << bio_data_hash["occupation"]
   end
-  return occupations[0].join(", ")
+  return occupations.first
 end
 
 def get_average_age_for_season(data, season)
