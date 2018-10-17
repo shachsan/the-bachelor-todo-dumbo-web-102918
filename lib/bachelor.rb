@@ -75,5 +75,5 @@ def get_average_age_for_season(data, season)
       end
     end
   end
-  contestants_ages.map {|age|age.to_i}.reduce(:+)/contestants_ages.length.to_f
+  (contestants_ages.map {|age|age.to_i}.reduce(:+)/contestants_ages.length.to_f).floor 
 end
